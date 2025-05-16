@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Vue</title>
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background: #f0f0f0;
+            margin: 20px;
+            display: inline-block;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        body {
+            background: #eee;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+        p, h3, ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+            background: #fff;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li.fav {
+            background: gold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Vue!</h1>
+    <div id="app">
+
+        <a :href="url">Best Website Ever</a>
+        <div v-if="showBooks">
+            <p> {{ title }} - {{ author}} - {{ age }} </p>
+
+            <button v-on:click="age++">Increase Age</button>
+            <button v-on:click="age--">Decrease Age</button>
+            <div>
+            <!-- <p> {{books[0].title}} - {{books[0].author}}</p>
+            <p> {{books[1].title}} - {{books[1].author}}</p>
+            <p> {{books[2].title}} - {{books[2].author}}</p> -->
+
+            <ul>
+                <li v-for="item in filteredBooks" :class="{ fav: item.isFav }" @click="changeFav(item)">
+                    <img :src="item.img" alt="item.title">
+                    {{item.title}} - {{item.author}}
+                </li>
+            </ul>
+        </div>
+        </div>
+        <button @click="changeAppearance()">
+            <span v-if="showBooks">Hide</span>
+            <span v-else>Show</span>
+        </button>
+        <div v-show="showBooks">Currently Showing Books</div>
+
+        <br>
+        <!-- Mouse Events-->
+        <div class="box" @mouseover="handleEvents($event, 5)">mouseover (enter)</div>
+        <div class="box" @mouseleave="handleEvents">mouseleave</div>
+        <div class="box" @dblclick="handleEvents">double click</div>
+        <div class="box" @mousemove="handleMouseMove">mousemove - {{x}} - {{y}}</div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
