@@ -1,6 +1,6 @@
 <template>
     <div class="results">
-        <p>{{ results }}</p>
+        <h5>Your Reaction time is: <p>{{ results }}</p> </h5>
         <p>{{ rank }}</p>
     </div>
 </template>
