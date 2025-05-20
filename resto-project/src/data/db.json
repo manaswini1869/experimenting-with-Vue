@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "password456"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "password": "password789"
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com",
+      "password": "password012"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Davis",
+      "email": "charlie.davis@example.com",
+      "password": "password345"
+    },
+    {
+      "id": 6,
+      "name": "Diana Evans",
+      "email": "diana.evans@example.com",
+      "password": "password678"
+    },
+    {
+      "id": 7,
+      "name": "Ethan Foster",
+      "email": "ethan.foster@example.com",
+      "password": "password901"
+    },
+    {
+      "id": 8,
+      "name": "Fiona Green",
+      "email": "fiona.green@example.com",
+      "password": "password234"
+    },
+    {
+      "id": 9,
+      "name": "George Harris",
+      "email": "george.harris@example.com",
+      "password": "password567"
+    },
+    {
+      "id": 10,
+      "name": "Hannah Ivers",
+      "email": "hannah.ivers@example.com",
+      "password": "password890"
+    },
+    {
+      "id": "a036",
+      "name": "Manaswini",
+      "email": "gfhj",
+      "password": "hello@123"
+    }
+  ]
+}
