@@ -1,15 +1,16 @@
 <template>
 <div>
-<SignUp />
+<!-- <SignUp /> -->
+<router-view />
 </div>
 </template>
 
 <script>
-import SignUp from './components/SignUp.vue'
+// import SignUp from './components/SignUp.vue'
 export default {
   name: 'App',
   components: {
-    SignUp
+    // SignUp
   }
 }
 </script>
@@ -21,6 +22,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+body {
+  padding: 0;
+  margin: 0;
 }
 </style>
