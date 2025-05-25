@@ -85,18 +85,6 @@
       "name": "Healthy Eats Cafe",
       "location": "321 Wellness Blvd, Fit Town",
       "contact": "555-3456"
-    },
-    {
-      "id": "5",
-      "name": "Pasta Paradise",
-      "location": "654 Noodle Ln, Carb City",
-      "contact": "555-7890"
-    },
-    {
-      "id": "e5ce",
-      "name": "Starbucks",
-      "location": "3515 University Ave",
-      "contact": "(608) 238-3467"
     }
   ]
 }

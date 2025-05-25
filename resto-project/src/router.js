@@ -30,7 +30,7 @@ const routes = [
   {
     name: "UpdateResto",
     component: UpdateResto,
-    path: "/update",
+    path: "/update/:id",
   },
 ];
 
